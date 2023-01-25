@@ -6,9 +6,9 @@ name: Python application
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: [ "users/abdul" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "users/abdul" ]
 
 permissions:
   contents: read
@@ -27,5 +27,5 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        #print("Hello World from python")
+        #pyhton print("Hello World from python")
         echo "Hello World from echo"
